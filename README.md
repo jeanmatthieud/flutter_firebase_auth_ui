@@ -17,16 +17,7 @@ SignInButton(Buttons.Google, onPressed: _signInWithGoogle)
 SignInButtonBuilder(
   icon: Icons.email,
   text: 'Sign-in with email',
-  onPressed: () {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return SignInEmailPasswordPage(onLoggedIn: () {
-          Navigator.of(context).pop();
-        });
-      },
-    );
-  },
+  onPressed: _signInWithEmail,
   backgroundColor: Colors.blueGrey[700],
 )
 // Phone
@@ -59,14 +50,30 @@ Future<FirebaseUser> _signInWithGoogle() async {
 }
 ```
 
+### Phone
+```dart
+void _signInWithPhone() {
+  showDialog(
+    context: context,
+    builder: (context) {
+      return SignInPhonePage(onLoggedIn: () {
+        Navigator.of(context).pop();
+      });
+    },
+  );
+}
+```
+
 ### Email
 ```dart
-showDialog(
-  context: context,
-  builder: (context) {
-    return SignInPhonePage(onLoggedIn: () {
-      Navigator.of(context).pop();
-    });
-  },
-);
+void _signInWithEmail() {
+  showDialog(
+    context: context,
+    builder: (context) {
+      return SignInEmailPasswordPage(onLoggedIn: () {
+        Navigator.of(context).pop();
+      });
+    },
+  );
+}
 ```

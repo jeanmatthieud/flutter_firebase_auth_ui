@@ -174,7 +174,6 @@ class _CreateAccountPageState extends State<_CreateAccountPage> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _password2Controller = TextEditingController();
   String _errorCode;
-  String _errorMessage;
   bool _loading = false;
 
   @override
@@ -264,7 +263,6 @@ class _CreateAccountPageState extends State<_CreateAccountPage> {
         print(e);
         setState(() {
           _errorCode = e.code;
-          _errorMessage = e.message;
         });
       } catch (e) {
         print(e);
@@ -287,7 +285,6 @@ class _ResetPasswordPageState extends State<_ResetPasswordPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   String _errorCode;
-  String _errorMessage;
   bool _loading = false;
   bool _success = false;
 
@@ -354,14 +351,12 @@ class _ResetPasswordPageState extends State<_ResetPasswordPage> {
 
         setState(() {
           _errorCode = null;
-          _errorMessage = null;
           _success = true;
         });
       } on PlatformException catch (e) {
         print(e);
         setState(() {
           _errorCode = e.code;
-          _errorMessage = e.message;
         });
       } catch (e) {
         print(e);
