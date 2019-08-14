@@ -60,7 +60,6 @@ class _SignInPageState extends State<_SignInPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   String _errorCode;
-  String _errorMessage;
   bool _loading = false;
 
   @override
@@ -145,7 +144,6 @@ class _SignInPageState extends State<_SignInPage> {
         print(e);
         setState(() {
           _errorCode = e.code;
-          _errorMessage = e.message;
         });
       } catch (e) {
         print(e);
