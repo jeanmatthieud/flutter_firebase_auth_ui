@@ -56,7 +56,7 @@ void _signInWithPhone() {
   showDialog(
     context: context,
     builder: (context) {
-      return SignInPhonePage(onLoggedIn: () {
+      return SignInPhonePage(onLoggedIn: (authResult) {
         Navigator.of(context).pop();
       });
     },
@@ -70,7 +70,7 @@ void _signInWithEmail() {
   showDialog(
     context: context,
     builder: (context) {
-      return SignInEmailPasswordPage(onLoggedIn: () {
+      return SignInEmailPasswordPage(onLoggedIn: (authResult) {
         Navigator.of(context).pop();
       });
     },
