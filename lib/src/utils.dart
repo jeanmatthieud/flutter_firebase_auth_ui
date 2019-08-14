@@ -5,21 +5,21 @@ String i18nErrorCode(context, errorCode) {
   I18n i18n = I18n.of(context);
   switch (errorCode) {
     case 'ERROR_USER_NOT_FOUND':
-      return "Cette adresse email ne correspond à aucun compte";
+      return i18n.error_user_not_found;
     case 'ERROR_INVALID_EMAIL':
-      return "Cette adresse email n'est pas valide.";
+      return i18n.error_invalid_email;
     case 'ERROR_WRONG_PASSWORD':
-      return "Le mot de passe est erroné";
+      return i18n.error_wrong_password;
     case 'ERROR_USER_DISABLED':
-      return "Votre compte est désactivé.";
+      return i18n.error_user_disabled;
     case 'ERROR_TOO_MANY_REQUESTS':
-      return "Trop de tentatives ont été effectuées.";
+      return i18n.error_too_many_requests;
     case 'ERROR_OPERATION_NOT_ALLOWED':
-      return "Opération non autorisée.";
+      return i18n.error_operation_not_allowed;
     case 'ERROR_WEAK_PASSWORD':
-      return "Mot de passe trop faible.";
+      return i18n.error_weak_password;
     case 'ERROR_EMAIL_ALREADY_IN_USE':
-      return "Adresse email déjà utilisé.";
+      return i18n.error_email_already_in_use;
     default:
       return i18n.unknownError;
   }

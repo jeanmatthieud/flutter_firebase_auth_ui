@@ -33,6 +33,22 @@ class I18n implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
+  /// "This email address doesn't match an account."
+  String get error_user_not_found => "This email address doesn't match an account.";
+  /// "This email address isn't valid."
+  String get error_invalid_email => "This email address isn't valid.";
+  /// "The password doesn't match."
+  String get error_wrong_password => "The password doesn't match.";
+  /// "Account disabled."
+  String get error_user_disabled => "Account disabled.";
+  /// "Too much tries, please retry later."
+  String get error_too_many_requests => "Too much tries, please retry later.";
+  /// "Operation not allowed."
+  String get error_operation_not_allowed => "Operation not allowed.";
+  /// "Too weak password."
+  String get error_weak_password => "Too weak password.";
+  /// "An account already use this email address."
+  String get error_email_already_in_use => "An account already use this email address.";
   /// "Sign in"
   String get signIn => "Sign in";
   /// "Check"
@@ -45,36 +61,36 @@ class I18n implements WidgetsLocalizations {
   String get unknownError => "Unknown error";
   /// "Validation code request in progress..."
   String get codeRequestInProgress => "Validation code request in progress...";
-  /// "Code de vérification envoyé,\nen attente de réception..."
-  String get codeRequestSent => "Code de vérification envoyé,\nen attente de réception...";
-  /// "Code vérifié !\nAuthentification en cours..."
-  String get codeCheckedAuthInProgress => "Code vérifié !\nAuthentification en cours...";
-  /// "Impossible de vérifier le code.\nAvez-vous du réseau ?"
-  String get unableToVerifyCode => "Impossible de vérifier le code.\nAvez-vous du réseau ?";
-  /// "Merci de préciser votre numéro de téléphone"
-  String get phoneFieldEmpty => "Merci de préciser votre numéro de téléphone";
-  /// "Format international requis"
-  String get phoneFormatError => "Format international requis";
-  /// "Merci de préciser votre adresse email"
-  String get emailFieldEmpty => "Merci de préciser votre adresse email";
-  /// "Merci de préciser un mot de passe"
-  String get passwordFieldEmpty => "Merci de préciser un mot de passe";
-  /// "Mot de passe oublié"
-  String get forgottenPassword => "Mot de passe oublié";
+  /// "Verification code sent,\nwaiting for receipt..."
+  String get codeRequestSent => "Verification code sent,\nwaiting for receipt...";
+  /// "Code verified!\nAuthentication in progress..."
+  String get codeCheckedAuthInProgress => "Code verified!\nAuthentication in progress...";
+  /// "Can not check the code.\nDo you have a network?"
+  String get unableToVerifyCode => "Can not check the code.\nDo you have a network?";
+  /// "Please specify your phone number."
+  String get phoneFieldEmpty => "Please specify your phone number.";
+  /// "International format required"
+  String get phoneFormatError => "International format required";
+  /// "Please specify your email address"
+  String get emailFieldEmpty => "Please specify your email address";
+  /// "Please specify a password"
+  String get passwordFieldEmpty => "Please specify a password";
+  /// "Password forgotten"
+  String get forgottenPassword => "Password forgotten";
   /// "Register"
   String get register => "Register";
-  /// "Créer"
-  String get create => "Créer";
-  /// "Répéter le mot de passe"
-  String get repeatPassword => "Répéter le mot de passe";
-  /// "Merci de répéter le mot de passe"
-  String get repeatPasswordFieldEmpty => "Merci de répéter le mot de passe";
-  /// "Les mots de passe ne correspondent pas"
-  String get passwordsDontMatch => "Les mots de passe ne correspondent pas";
-  /// "Mot de passe réinitialisé !\nVous allez recevoir un mail dans les prochaines minutes."
-  String get passwordResetSuccess => "Mot de passe réinitialisé !\nVous allez recevoir un mail dans les prochaines minutes.";
-  /// "Réinitialiser"
-  String get reset => "Réinitialiser";
+  /// "Create"
+  String get create => "Create";
+  /// "Repeat password"
+  String get repeatPassword => "Repeat password";
+  /// "Please repeate your password"
+  String get repeatPasswordFieldEmpty => "Please repeate your password";
+  /// "Passwords do not match"
+  String get passwordsDontMatch => "Passwords do not match";
+  /// "Password reset!\nYou will receive an email in the next few minutes."
+  String get passwordResetSuccess => "Password reset!\nYou will receive an email in the next few minutes.";
+  /// "Reset"
+  String get reset => "Reset";
 }
 
 class _I18n_en_US extends I18n {
@@ -87,6 +103,30 @@ class _I18n_en_US extends I18n {
 class _I18n_fr_FR extends I18n {
   const _I18n_fr_FR();
 
+  /// "Cette adresse email ne correspond à aucun compte."
+  @override
+  String get error_user_not_found => "Cette adresse email ne correspond à aucun compte.";
+  /// "Cette adresse email n'est pas valide."
+  @override
+  String get error_invalid_email => "Cette adresse email n'est pas valide.";
+  /// "Le mot de passe est erroné."
+  @override
+  String get error_wrong_password => "Le mot de passe est erroné.";
+  /// "Votre compte est désactivé."
+  @override
+  String get error_user_disabled => "Votre compte est désactivé.";
+  /// "Trop de tentatives ont été effectuées."
+  @override
+  String get error_too_many_requests => "Trop de tentatives ont été effectuées.";
+  /// "Opération non autorisée."
+  @override
+  String get error_operation_not_allowed => "Opération non autorisée.";
+  /// "Mot de passe trop faible."
+  @override
+  String get error_weak_password => "Mot de passe trop faible.";
+  /// "Adresse email déjà utilisé."
+  @override
+  String get error_email_already_in_use => "Adresse email déjà utilisé.";
   /// "Se connecter"
   @override
   String get signIn => "Se connecter";

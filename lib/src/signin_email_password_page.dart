@@ -172,7 +172,7 @@ class _CreateAccountPageState extends State<_CreateAccountPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _password2Controller = TextEditingController();
+  final TextEditingController _passwordRepeatController = TextEditingController();
   String _errorCode;
   bool _loading = false;
 
@@ -180,7 +180,7 @@ class _CreateAccountPageState extends State<_CreateAccountPage> {
   void dispose() {
     _emailController?.dispose();
     _passwordController?.dispose();
-    _password2Controller?.dispose();
+    _passwordRepeatController?.dispose();
     super.dispose();
   }
 
@@ -224,7 +224,7 @@ class _CreateAccountPageState extends State<_CreateAccountPage> {
               TextFormField(
                 enabled: !_loading,
                 obscureText: true,
-                controller: _password2Controller,
+                controller: _passwordRepeatController,
                 decoration: InputDecoration(labelText: i18n.repeatPassword),
                 validator: (String value) {
                   if (value.isEmpty) {

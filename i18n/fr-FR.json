@@ -1,4 +1,12 @@
 {
+  "error_user_not_found": "Cette adresse email ne correspond à aucun compte.",
+  "error_invalid_email": "Cette adresse email n'est pas valide.",
+  "error_wrong_password": "Le mot de passe est erroné.",
+  "error_user_disabled": "Votre compte est désactivé.",
+  "error_too_many_requests": "Trop de tentatives ont été effectuées.",
+  "error_operation_not_allowed": "Opération non autorisée.",
+  "error_weak_password": "Mot de passe trop faible.",
+  "error_email_already_in_use": "Adresse email déjà utilisé.",
   "signIn": "Se connecter",
   "check": "Vérifier",
   "email": "Email",
