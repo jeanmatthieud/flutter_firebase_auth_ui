@@ -1,8 +1,9 @@
 name: flutter_firebase_auth_ui
-description: A simple UI for authenticate users.
-version: 0.0.1
-author:
-homepage:
+description: A simple UI for authenticate users based on firebase_auth.
+version: 0.0.2-alpha
+author: Jean-Matthieu Dechristé <dart@dev.dechriste.fr>
+homepage: https://github.com/jeanmatthieud/flutter_firebase_auth_ui
+repository: https://github.com/jeanmatthieud/flutter_firebase_auth_ui
 
 environment:
   sdk: ">=2.2.2 <3.0.0"
