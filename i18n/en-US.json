@@ -1,0 +1,23 @@
+{
+  "signIn": "Sign in",
+  "check": "Check",
+  "email": "Email",
+  "password": "Password",
+  "unknownError": "Unknown error",
+  "codeRequestInProgress": "Validation code request in progress...",
+  "codeRequestSent": "Code de vérification envoyé,\nen attente de réception...",
+  "codeCheckedAuthInProgress": "Code vérifié !\nAuthentification en cours...",
+  "unableToVerifyCode": "Impossible de vérifier le code.\nAvez-vous du réseau ?",
+  "phoneFieldEmpty": "Merci de préciser votre numéro de téléphone",
+  "phoneFormatError": "Format international requis",
+  "emailFieldEmpty": "Merci de préciser votre adresse email",
+  "passwordFieldEmpty": "Merci de préciser un mot de passe",
+  "forgottenPassword": "Mot de passe oublié",
+  "register": "Register",
+  "create": "Créer",
+  "repeatPassword": "Répéter le mot de passe",
+  "repeatPasswordFieldEmpty": "Merci de répéter le mot de passe",
+  "passwordsDontMatch": "Les mots de passe ne correspondent pas",
+  "passwordResetSuccess": "Mot de passe réinitialisé !\nVous allez recevoir un mail dans les prochaines minutes.",
+  "reset": "Réinitialiser"
+}

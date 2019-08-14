@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Development in progress
 
-* TODO: Describe initial release.
+* Translation in English is not done yet
+* Only Phone / Email included
