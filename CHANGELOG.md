@@ -1,3 +1,7 @@
+## [0.0.2+1] - Development in progress
+
+* Dependencies updated
+
 ## [0.0.2-alpha] - Development in progress
 
 * Translation in English and French
